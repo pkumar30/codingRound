@@ -22,6 +22,7 @@ public class FlightBookingTest {
         driver.get("https://www.cleartrip.com/");
         waitFor(2000);
         driver.findElement(By.id("OneWay")).click();
+        System.out.println();
 
         driver.findElement(By.id("FromTag")).clear();
         driver.findElement(By.id("FromTag")).sendKeys("Bangalore");
